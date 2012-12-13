@@ -1,0 +1,39 @@
+/* Fonts */
+@font-face {
+  font-family: "underwood1913normal";
+  src: url("../fonts/underwood_etendu_1913-webfont.eot");
+  src: url("../fonts/underwood_etendu_1913-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/underwood_etendu_1913-webfont.woff") format("woff"),
+  url("../fonts/underwood_etendu_1913-webfont.ttf") format("truetype"),
+  url("../fonts/underwood_etendu_1913-webfont.svg#underwood1913normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Styling */
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fff0ff url("../images/paper.jpg") repeat 25.8125em;
+  min-width: 320px;
+}
+
+#main {
+  width: 60em;
+}
+
+#nameplate {
+  position: absolute;
+  height: 12.5em;
+  width: 25em;
+  margin: -6.25em 0 0 -12.5em;
+  top: 66%;
+  left: 66%;
+}
+
+#nameplate .label {
+  font-size: 3em;
+  font-family: "underwood1913normal", "Courier", serif;
+}
