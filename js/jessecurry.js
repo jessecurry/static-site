@@ -1,22 +1,14 @@
 $(document).ready(function() {
+  var $document = $(document);
   var $body = $('body');
   var setBodyScale = function() {
-      var scaleSource = $body.width();
-      var scaleFactor = 0.2083333333333;
-      var maxScale = 600;
-      var minScale = 0;
-      var fontSize = scaleSource * scaleFactor;
       
-      if (fontSize > maxScale) 
-        fontSize = maxScale;
+      var scale = $body.width() / 960.0;
+      if ( $body.width() > $document.height() )
+        scale = $document.height() / 960.0;
       
-      if (fontSize < minScale) 
-        fontSize = minScale;
-        
-      $('body').css('font-size', fontSize + '%');
-      
-      // Height
-      $('#nameplate').css('top', ($(document).height() * 0.66) + 'px');
+      var fontSize = 16.0 * scale;
+      $('body').css('font-size', fontSize + 'px');
   }
 
   $(window).resize(function() { setBodyScale(); });

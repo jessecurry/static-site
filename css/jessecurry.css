@@ -18,22 +18,40 @@ html {
 body {
   background: #fff0ff url("../images/paper.jpg") repeat 25.8125em;
   min-width: 320px;
+  
+  font-size: 100%;
 }
 
 #main {
-  width: 60em;
+  width: 100%;
 }
 
 #nameplate {
-  position: absolute;
+  position: relative;
   height: 12.5em;
   width: 25em;
   margin: -6.25em 0 0 -12.5em;
-  top: 66%;
-  left: 66%;
+  top: 40em;
+  left: 40em;
 }
 
 #nameplate .label {
+  text-align: center;
   font-size: 3em;
   font-family: "underwood1913normal", "Courier", serif;
+}
+
+.button-bar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-bar .button {
+  width: 4.0em;
+  height: 4.0em;
+}
+
+/* Services */
+#email {
+  background: url("../images/email.png") no-repeat 100%;
 }
